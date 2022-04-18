@@ -2,12 +2,14 @@ const {
   getAllPatients,
   createPatient,
   getAllDonors,
+  createDonor,
   getAllBloodBanks,
 } = require('./apis');
 
 module.exports = {
   getAllPatients,
-  getAllDonors,
-  getAllBloodBanks,
   createPatient,
+  getAllDonors,
+  createDonor,
+  getAllBloodBanks,
 };
