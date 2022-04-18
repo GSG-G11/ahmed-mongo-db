@@ -1,6 +1,6 @@
 const { getAllPatients, createPatient } = require('./patientsController');
 const { getAllDonors, createDonor } = require('./donorsController');
-const { getAllBloodBanks } = require('./bloodBanksController');
+const { getAllBloodBanks, createBloodBank } = require('./bloodBanksController');
 
 module.exports = {
   getAllPatients,
@@ -8,4 +8,5 @@ module.exports = {
   getAllDonors,
   createDonor,
   getAllBloodBanks,
+  createBloodBank,
 };
