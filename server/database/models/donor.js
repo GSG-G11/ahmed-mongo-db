@@ -4,7 +4,10 @@ const donorSchema = new Schema({
   name:  'string',
   bloodGroup: 'string',
   contactNumber: 'string',
-  // bloodBank: 'string',
+  bloodBank: {
+		type: Schema.Types.ObjectId,
+		ref: 'BloodBank',
+	},
 });
 
 const Donor = model('Donor', donorSchema);
