@@ -10,13 +10,12 @@ module.exports = {
   },
 };
 
-
 /* eslint-disable no-unused-vars */
 
 const {
   findAllBloodBankQuery,
   createBloodBankQuery,
-} = require('../../database/queries/bloodBank');
+} = require('../../database');
 
 module.exports = {
   getAllBloodBanks: async (_, res, next) => {

@@ -1,4 +1,4 @@
-const Donor = require('../models/donor');
+const { Donor } = require('../models');
 
 const findAllDonorQuery = () => Donor.find();
 const createDonorQuery = ({ name, bloodGroup, contactNumber, bloodBank }) =>

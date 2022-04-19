@@ -1,4 +1,4 @@
-const BloodBank = require('../models/bloodBank');
+const { BloodBank } = require('../models');
 
 const findAllBloodBankQuery = () => BloodBank.find().populate('donors');
 const createBloodBankQuery = ({ name, city, contactNumber }) =>

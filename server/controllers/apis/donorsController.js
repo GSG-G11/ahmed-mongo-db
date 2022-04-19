@@ -3,7 +3,7 @@
 const {
   findAllDonorQuery,
   createDonorQuery,
-} = require('../../database/queries/donor');
+} = require('../../database');
 
 module.exports = {
   getAllDonors: async (_, res, next) => {

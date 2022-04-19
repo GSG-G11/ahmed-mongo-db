@@ -3,7 +3,7 @@
 const {
   findAllPatientQuery,
   createPatientQuery,
-} = require('../../database/queries/patient');
+} = require('../../database');
 
 module.exports = {
   getAllPatients: async (_, res, next) => {
