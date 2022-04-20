@@ -7,6 +7,12 @@ const BloodBankSchema = new Schema({
   
 });
 
+BloodBankSchema.virtual('donor',{
+  ref:'Donor',
+  localField:'_id',
+  foreignField:'bank'
+})
+
 const BloodBank = model('BloodBank', BloodBankSchema);
 
 module.exports = BloodBank;

@@ -1,8 +1,18 @@
 const { Donor } = require('../models');
 
+/**
+ * @param  {}
+ */
 const findAllDonorQuery = () => Donor.find();
-const createDonorQuery = ({ name, bloodGroup, contactNumber, bloodBank }) =>
-  Donor.create({ name, bloodGroup, contactNumber, bloodBank });
+
+/**
+ * @param  {} {name
+ * @param  {} bloodGroup
+ * @param  {} contactNumber
+ * @param  {} bloodBank}
+ */
+const createDonorQuery = ({ name, bloodGroup, contactNumber, bank }) =>
+  Donor.create({ name, bloodGroup, contactNumber, bank });
 
 module.exports = {
   findAllDonorQuery,

@@ -5,6 +5,10 @@ const {
   createDonor,
   getAllBloodBanks,
   createBloodBank,
+  getAllUsers,
+  createUsers,
+  getAllPosts,
+  createPosts,
 } = require('./apis');
 
 module.exports = {
@@ -14,4 +18,8 @@ module.exports = {
   createDonor,
   getAllBloodBanks,
   createBloodBank,
+  getAllUsers,
+  createUsers,
+  getAllPosts,
+  createPosts,
 };

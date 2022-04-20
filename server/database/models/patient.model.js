@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-const PatientSchema = Schema({
+const PatientSchema = new Schema({
   name: 'string',
   bloodGroup: 'string',
 });

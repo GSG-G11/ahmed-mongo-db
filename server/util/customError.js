@@ -1,3 +1,8 @@
+/**
+ * @param  {} message
+ * @param  {} status
+ * @param  {} massages
+ */
 module.exports = {
   customError: (message, status, massages) => {
     const error = new Error(message);

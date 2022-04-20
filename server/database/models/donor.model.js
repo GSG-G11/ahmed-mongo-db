@@ -1,13 +1,14 @@
 const { Schema, model } = require('mongoose');
 
 const donorSchema = new Schema({
-  name:  'string',
+  name: 'string',
   bloodGroup: 'string',
   contactNumber: 'string',
-  bloodBank: {
-		type: Schema.Types.ObjectId,
-		ref: 'BloodBank',
-	},
+  bank: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'BloodBank',
+  },
 });
 
 const Donor = model('Donor', donorSchema);

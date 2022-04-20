@@ -6,6 +6,11 @@ const {
 } = require('../../database');
 
 module.exports = {
+  /**
+   * @param  {} _
+   * @param  {} res
+   * @param  {} next
+   */
   getAllPatients: async (_, res, next) => {
     try {
       const patients = await findAllPatientQuery();
@@ -14,6 +19,11 @@ module.exports = {
       next('SERVER ERROR');
     }
   },
+  /**
+   * @param  {} {body}
+   * @param  {} res
+   * @param  {} next
+   */
   createPatient: async ({ body }, res, next) => {
     try {
       const patient = await createPatientQuery(body);

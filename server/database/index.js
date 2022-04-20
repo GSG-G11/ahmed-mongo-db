@@ -1,4 +1,4 @@
-const { Patient, Donor, BloodBank } = require('./models');
+const { Patient, Donor, BloodBank, User, Post } = require('./models');
 const {
   findAllBloodBankQuery,
   createBloodBankQuery,
@@ -18,4 +18,6 @@ module.exports = {
   BloodBank,
   Patient,
   Donor,
+  Post,
+  User,
 };
